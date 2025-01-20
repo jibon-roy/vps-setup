@@ -57,6 +57,19 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 ### Now copy and paste it on `deploy.yml`
+```bash
+HOST = VPS IP
+```
+```bash
+USER = root
+```
+```bash
+SSH_PRIVATE_KEY = -----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAgEAqcyb0ioAT1wAHo1wzdqd+3eAr7pGspx+AlBX4l4eMKPbjQMMTyfY
+-----END OPENSSH PRIVATE KEY-----
+```
+
 
 ```bash
 name: Deploy to VPS
