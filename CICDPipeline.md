@@ -54,7 +54,7 @@ npm install -g pm2
 Create a `.github/workflows/deploy.yml` file in your repository with the following content:
 ```bash
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-
+```
 
 ```bash
 name: Deploy to VPS
