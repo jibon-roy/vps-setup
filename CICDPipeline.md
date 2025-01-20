@@ -56,6 +56,8 @@ Create a `.github/workflows/deploy.yml` file in your repository with the followi
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
+Now copy and paste it on `deploy.yml`
+
 ```bash
 name: Deploy to VPS
 
