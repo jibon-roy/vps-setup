@@ -124,5 +124,5 @@ jobs:
             npm run build
 
             # Start or restart the application using PM2
-            pm2 restart kylowren-frontend
+            pm2 restart [project-name]
 ```
