@@ -120,6 +120,7 @@ jobs:
             # Load NVM (if needed for future compatibility)
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+            #  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
             # Navigate to project directory
             cd /var/www/[project-name]
