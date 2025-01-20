@@ -51,12 +51,12 @@ npm install -g pm2
 
 ## 2. GitHub Actions Workflow
 
-Create a `.github/workflows/deploy.yml` file in your repository with the following content:
+### Create a `.github/workflows/deploy.yml` file in your repository with the following content:
 ```bash
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-Now copy and paste it on `deploy.yml`
+### Now copy and paste it on `deploy.yml`
 
 ```bash
 name: Deploy to VPS
@@ -109,10 +109,10 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
             # Navigate to project directory
-            cd /var/www/kylowren-frontend-nextjs
+            cd /var/www/[project-name]
 
             # Stop the application using PM2
-            pm2 stop kylowren-frontend
+            pm2 stop [project-name]
 
             # Pull the latest changes
             git pull origin main
