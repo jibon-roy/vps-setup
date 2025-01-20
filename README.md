@@ -1,4 +1,3 @@
-# vps-setup
 # VPS SETUP
 
 ### STEP 1
