@@ -36,6 +36,18 @@ pm2 -v</code></pre>
 
   <h2>3. Deploy Your Next.js Project</h2>
   <ol>
+     <li> Check UFW status
+      <pre><code>sudo ufw allow 3000</code></pre>
+    </li>
+     <li>allow 3000 port
+      <pre><code>sudo ufw allow 3000</code></pre>
+    </li>
+    <li>Reload ufw status
+      <pre><code>sudo ufw reload</code></pre>
+    </li>
+     <li> Check UFW status
+      <pre><code>sudo ufw allow 3000</code></pre>
+    </li>
     <li>Build your Next.js project:
       <pre><code>npm run build</code></pre>
     </li>
