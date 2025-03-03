@@ -25,7 +25,7 @@ sudo systemctl enable nginx</code></pre>
 sudo apt install -y nodejs</code></pre>
     </li>
     <li>Install PM2 globally:
-      <pre><code>sudo npm install -g pm2</code></pre>
+      <pre><code>npm install -g pm2</code></pre>
     </li>
     <li>Verify installation:
       <pre><code>node -v
