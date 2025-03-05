@@ -67,7 +67,8 @@ pm2 startup</code></pre>
       <pre><code>sudo nano /etc/nginx/sites-available/nextjs-app</code></pre>
     </li>
     <li>Add the following configuration (replace <code>example.com</code> with your domain or server IP):
-      <pre><code>server {
+      <pre><code>
+        server {
     listen 80;
     server_name example.com www.example.com;
 
