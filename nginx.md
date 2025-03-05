@@ -79,7 +79,8 @@ pm2 startup</code></pre>
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
-}</code></pre>
+  }
+</code></pre>
     </li>
     <li>Enable the configuration:
       <pre><code>sudo ln -s /etc/nginx/sites-available/nextjs-app /etc/nginx/sites-enabled/</code></pre>
