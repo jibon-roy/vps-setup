@@ -67,20 +67,20 @@ pm2 startup</code></pre>
       <pre><code>sudo nano /etc/nginx/sites-available/nextjs-app</code></pre>
     </li>
     <li>Add the following configuration (replace <code>example.com</code> with your domain or server IP):
-    <pre><code>
-    server {
-    listen 80;
-    server_name example.com www.example.com;
+<pre><code>
+server {
+listen 80;
+server_name example.com www.example.com;
 
-    location / {
-            proxy_pass http://127.0.0.1:3000;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection 'upgrade';
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
+location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
     }
+}
 </code></pre>
     </li>
     <li>Enable the configuration:
